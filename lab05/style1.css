@@ -1,0 +1,42 @@
+/* For index1.html */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.nav {
+    background-color: rgb(90, 85, 77);
+    color: white;
+    padding: 10px;
+}
+
+.nav ul {
+    text-align: center;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0px 20px;
+}
+
+.card-section {
+    text-align: center;
+}
+
+.card-1, .card-2, .card-3 {
+    background-color: rgb(147, 155, 147);
+    height: 170px;
+    float: left;
+    width: 33%;
+    margin: 70px 0.16%;
+}

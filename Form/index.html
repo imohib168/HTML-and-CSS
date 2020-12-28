@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h2 class="mainHeading">Signup</h2>
+        <form>
+            <h2 class="heading"> <span class="num">01</span> Your Basic Info</h2>
+
+            <div>
+                <label>Name:</label>
+                <input class="inp-field" type="text" name="Name">
+            </div>
+
+            <div>
+                <label>Email:</label>
+                <input class="inp-field" type="email" name="Email">
+            </div>
+
+            <div>
+                <label>Password:</label>
+                <input class="inp-field" type="password" name="Password">
+            </div>
+
+            <div class="radio-buttons">
+                <label>Age:</label> <br>
+                <input type="radio" name="age"> Under 13 <br>
+                <input type="radio" name="age"> 13 or Older
+            </div>
+
+            <h2 class="heading"> <span class="num">02</span> Your Profile</h2>
+
+            <div>
+                <label>Biography</label>
+                <textarea name="Biography" cols="40" rows="5"></textarea>
+            </div>
+
+            <div>
+                <select>
+                    <option value="Business Owner">Business Owner</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Employe">Employe</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Interests:</label> <br>
+                <input type="checkbox" name="Development"> Development <br>
+                <input type="checkbox" name="Design"> Design <br>
+                <input type="checkbox" name="Business"> Business <br>
+            </div>
+
+            <div>
+                <button>Signup</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

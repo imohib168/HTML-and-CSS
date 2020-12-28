@@ -1,0 +1,56 @@
+body {
+    height: 100vh;
+}
+
+.SignupForm {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 7px;
+    box-shadow: 10px 2px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.SignupForm h2 {
+    color: #0B3954;
+    text-align: center;
+    margin-top: 10px 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+.SignupForm label {
+    color: #0B3954;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-left: 3px;
+    font-size: 20px;
+}
+
+.SignupForm input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 12px 5px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+.SignupForm button {
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.SignupForm button:hover {
+    background-color: gainsboro;
+    box-shadow: 2px 2px 10px rgb(126, 126, 126);
+    transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,44 @@
+/* Main Section */
+
+/* 1) About Us */
+
+.aboutUs {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.aboutUs h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.aboutUs_paragraphs {
+    padding: 8px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.aboutUs_paragraphs p {
+    margin-bottom: 20px;
+}
+
+/* 2) Contact Us */
+
+.contact_container {
+    background-color: #4d758b;
+    color: beige;
+}
+
+.contact_container p {
+    margin: 3px 0px;
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+.contactUs {
+    display: flex;
+    padding: 60px 10px;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto;
+}

@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(216, 218, 218);
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container-1 img {
+    object-fit: contain;
+    width: 300px;
+}
+
+.container-1 h1 {
+    margin-left: 30px;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 25%;
+}
+
+form {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+.container-2 form input {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+}
+
+.login {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(99, 78, 219);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.forgot {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.newAccount {
+    text-align: center;
+    padding: 5px;
+}
+
+.newAccount button {
+    width: 60%;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.pageForCeleb {
+    color: darkblue;
+}
+
+.pageForCeleb a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pageForCeleb a:hover {
+    text-decoration: underline;
+}

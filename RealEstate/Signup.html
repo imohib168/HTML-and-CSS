@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate | Signup</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/signUp.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar_logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="navbar_item">
+            <ul class="navbar_items_ul">
+                <li class="navbar_item"><a href="index.html">HOME</a></li>
+                <li class="navbar_item active"><a href="#">SIGNUP</a></li>
+                <li class="navbar_item"><a href="ContactUs.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <form class="SignupForm">
+        <h2>Signup Form</h2>
+        <!-- username -->
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username...">
+
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name...">
+
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email...">
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password...">
+
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password...">
+
+        <!-- Signup Button -->
+        <button onclick="SignUp()" type="button">Signup</button>
+
+    </form>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
