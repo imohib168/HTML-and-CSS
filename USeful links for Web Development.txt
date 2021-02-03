@@ -1,0 +1,11 @@
+https://undraw.co/illustrations
+
+https://uicolorpicker.com/
+
+https://www.svgbackgrounds.com/#page-turner
+
+https://bennettfeely.com/clippy/
+
+
+font Kit code: 
+<script src="https://kit.fontawesome.com/8931b46d85.js" crossorigin="anonymous"></script>
