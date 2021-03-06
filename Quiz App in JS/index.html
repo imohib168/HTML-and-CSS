@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+</head>
+
+<body>
+    <div class="quizContainer">
+        <h2 id="question">Question goes here...</h2>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" name="answer" value="1" required>
+                    <span class="option1"></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer" value="2" required>
+                    <span class="option2"></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer" value="3" required>
+                    <span class="option3"></span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answer" value="4" required>
+                    <span class="option4"></span>
+                </label>
+            </li>
+        </ul>
+        <button onClick="nextQuestion()">Next</button>
+        <div id="score"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

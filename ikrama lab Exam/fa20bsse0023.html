@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="fa20bsse0023.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="head">Sign Up</div>
+        <form class="form">
+            <table>
+                <tr cellspacing="5">
+                    <td>First Name</td>
+                    <td><input type="text" name="First Name" id="fName" placeholder="Enter First Name"></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="Last Name" id="lName" placeholder="Enter Last name"></td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="Date" id="date"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+
+                    <td id="gender">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Country</td>
+                    <td>
+                        <select name="Country" id="country">
+                            <option value="pakistan">Pakistan</option>
+                            <option value="australia">Australia</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E-mail</td>
+                    <td><input type="email" name="Email" id="email" placeholder="Enter Email"></td>
+                </tr>
+
+                <tr>
+                    <td>Phone</td>
+                    <td><input type="tel" name="Phone" id="tel" placeholder="Enter Phone"></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="Password" id="pass"></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input type="password" name="Password" id="conf-pass"></td>
+                </tr>
+                <tr align="right">
+                    <td></td>
+                    <td> <input type="checkbox" name="AgreeToTheTerms" id="ATTT">
+                        I agree to the terms of use</td>
+                </tr>
+            </table>
+        </form>
+        <div class="btns">
+            <button class="btn1" type="button" onClick="validateForm()">Submit</button>
+            <button class="btn2">Cancel</button>
+        </div>
+    </div>
+
+    <script>
+        var fName = document.getElementById("fName").value;
+        var lName = document.getElementById("lName").value;
+        var tel = document.getElementById("tel").value;
+
+        var pass = document.getElementById("pass");
+        var confPass = document.getElementById("conf-pass");
+
+        var gender = document.getElementsByName("gender").value;
+
+        var phoneNo = /^\d{10}$/;
+
+
+        function validateForm() {
+            if (fName.length > 0 || lName.length > 0) {
+                alert("Name filled");
+            } else {
+                alert("Kindly Enter your Name...")
+            }
+
+            if (!tel.match(phoneNo)) {
+                alert("Phone Number must be in Number format");
+            }
+
+            if (pass.value == confPass.value) {
+                alert("Password Match...");
+            } else {
+                alert("Password Doesn't Match...")
+            }
+
+            if (gender === 'male') {
+                alert("Male is not Allowed");
+            } else if (gender == 'female') {
+                print("print");
+            }
+        }
+    </script>
+</body>
+
+</html>

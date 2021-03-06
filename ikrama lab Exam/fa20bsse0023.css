@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid white;
+}
+
+.head {
+    padding: 8px;
+    background-color: rgb(255, 166, 0);
+    color: black;
+}
+
+.form {
+    padding: 10px;
+    background-color: rgb(2, 2, 71);
+    text-align: center;
+    color: rgb(255, 166, 0);
+    font-size: 17px;
+}
+
+table tr td:nth-child(1) {
+    padding: 6px;
+    text-align: right;
+}
+
+table tr td:nth-child(2) {
+    padding: 6px;
+    text-align: left;
+}
+
+.btns {
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(255, 166, 0);
+}
+
+.btn1 {
+    background-color: rgb(10, 151, 10);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.btn2 {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
