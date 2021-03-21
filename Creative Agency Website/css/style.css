@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #f60f20;
+    --secondary-color: #1b206e;
+}
+
+/* Styling */
+
+html, body {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+}
+
+/* section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    padding: 100px;
+    margin-top: 60px;
+} */
+
+header {
+    background-color: white !important;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 30;
+}
+
+.toggleButton {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.headerLinks {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerLinks.active {
+    transition: all 0.2s ease-in-out;
+    right: 0;
+}
+
+.headerLinks ul {
+    position: relative;
+}
+
+.headerLinks ul li a {
+    font-size: 2.2rem;
+    color: #111;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.headerLinks ul li a:hover {
+    color: var(--primary-color);
+}
+
+.headerLinks ul li {
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.socialIconsBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIconsBar ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* /* position: relative; */
+}
+
+.socialIconsBar ul li {
+    list-style-type: none;
+    margin: 15px 0px;
+}
+
+.socialIconsBar ul li a {
+    font-size: 35px;
+}
+
+.mail {
+    position: fixed;
+    bottom: 20px;
+    font-size: 25px;
+}
+
+.homeSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.homeImg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 110%;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.homeContent h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.homeContent p {
+    z-index: 1;
+    max-width: 65%;
+    margin: 30px 0px;
+    font-size: 18px;
+}
+
+a.btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 0;
+    width: 10%;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+/* Services */
+
+.sectionContainer {
+    margin-top: 100px;
+    width: 92%;
+    margin: 100px auto;
+}
+
+.services {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.services .service {
+    padding: 30px;
+}
+
+.services .service:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.services .service h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+.services .service .icon img {
+    max-width: 100px;
+}
+
+@media screen and (max-width: 1068px) {
+    .logo {
+        top: 5px;
+        left: 15px;
+    }
+    .homeSection img {
+        display: none;
+    }
+    a.btn {
+        width: 100%;
+    }
+    .homeContent p {
+        max-width: 100%;
+    }
+    .homeContent h1 {
+        margin-top: 60px;
+    }
+    .socialIconsBar ul li a {
+        font-size: 25px;
+    }
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .services .service {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+}
